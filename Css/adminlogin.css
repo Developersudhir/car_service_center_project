@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Code By SUDHIR */
+nav{
+    background-color: #83c2f0;
+    display:flex;
+    padding:1%;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav img{
+    width:40px;
+    border-radius:50%;
+
+}
+nav h2{
+    margin-left:30%;
+}
+.loginbox {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 217, 217);
+    width: 30vw;
+    padding: 10px;
+    margin-top: 16%;
+    margin-left: 35%;
+    box-shadow: 12px 13px 30px rgba(44, 77, 221, 0.712);
+    border-radius: 12px;
+    padding-top: 1.5%;
+    height: 40vh;
+    transition: 0.7s center;
+    position: absolute;
+}
+#logimg{
+    width: 65px;
+    border-radius: 50%;
+    margin: -12% 40%;
+}
+#logform{
+    margin: 17% 9%;
+}
+.loader{
+    background-color: #fff;
+    background-image: url('../img/loader1.gif');
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+a{
+  color: aliceblue;
+  margin-left: 3%;
+  margin-top: 0.5rem;
+  text-decoration:none;
+  font-weight:600;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .loginbox{
+        width: 75vw;
+        height: 40vh;
+        margin-left: 20%;
+    }
+    nav h2{
+        margin-left:3%;
+    }
+}
+@media (min-width:480px) and (max-width:761px){
+    .loginbox{
+        width: 50vw;
+        margin-left: 27%;
+    }
+    nav h2{
+        margin-left:12%;
+    }
+}
+@media (min-width:761px) and (max-width:1200px){
+    .loginbox{
+        width: 50vw;
+        margin-left: 22%;
+        height: 24vh;
+    }
+    nav h2{
+        margin-left:3%;
+    }
+}

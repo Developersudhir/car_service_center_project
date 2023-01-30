@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Code By SUDHIR */
+nav{
+    background-color: #83c2f0;
+    display:flex;
+    padding:1%;
+}
+
+nav img{
+    width:40px;
+    border-radius:50%;
+
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+nav h2{
+    margin-left:37%;
+}
+.billform{
+    margin:5% 10%;
+    display:inline-flex;
+}
+input[type="email"]{
+    width:16rem;
+}
+input[type="text"]{
+    width:16rem;
+}
+#billtb{
+        margin-left: 15%;
+        margin-top:2%;
+        border-radius:15px;
+        text-align:center;
+    }
+    #billlist{
+        width: 40%;
+        margin-top: 8%;
+        margin-left: 5%;
+    }
+    #billlist td{
+        padding:0.2rem;
+    }
+    tr,td,th{
+        border:1px solid black;
+        width:11rem;
+        height:1.1rem;
+    }
+    .bill{
+        height: 54vh;
+        margin: 10% 20%;
+        background-color: aliceblue;
+        text-align: center;
+        border-radius:15px;
+        box-shadow:4px 8px 12px black;
+
+    }
+    .btn{
+        margin-top:2%;
+    }
+    #back{
+        position: absolute;
+        left: 1rem;
+        top: 8rem;
+        padding: 5px;
+        border-radius: 10px;
+        background: azure;
+        width: 4.2rem;
+    }
+    a{
+        color: red;
+        text-decoration: none;
+        font-weight:500;
+    }
+    /* #billno{
+        text-align:end;
+        margin-right:1%;
+    } */
+    #logusertb{
+        width:60%;
+        margin:auto;
+        text-align:center;
+        padding:1px;
+        background: lavenderblush;
+    }
+    
+    body{
+        background-color:bisque;
+    }
+@media (min-width:320px) and (max-width:480px){
+    nav h2{
+        font-size: 0.8rem;
+        margin-left: 10%;
+    }
+    #back{
+    left: 1rem;
+    top: 4rem;
+    width: 3.2rem;
+    }
+    .billform{
+        display: block;
+    }
+    .bill {
+        font-size: 0.7rem;
+    }
+    #billtb{
+        margin-left: 0;
+    }
+}
+@media (min-width:481px) and (max-width:768px){
+    #billtb {
+        margin-left: 3%;
+        margin-top: -1%;}
+    .billform{
+        margin-left: 15%;
+        }
+}
+@media (min-width:769px) and (max-width:1036px){
+    #billtb {
+        margin: 0;
+        margin-top: -1%;}
+    .billform{
+        margin-left: 15%;
+    }
+
+}

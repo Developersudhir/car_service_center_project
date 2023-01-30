@@ -1,0 +1,117 @@
+*{margin: 0;
+padding: 0;}
+
+/* Code By Sudhir */
+nav a img{
+    width: 50px;
+    border-radius: 50px;
+}
+nav.navbar.sticky-top {
+ padding-left: 1.5%;
+}
+h3{
+    color: black;
+}
+.card{
+    margin: 2% 5%;
+    transition: 0.7s;
+    cursor: pointer;
+    box-shadow: 12px 13px 30px rgba(75, 72, 236, 0.753);
+    width: 18rem;
+  }
+.card:hover{
+    transform: scale(1.1);
+    background-color: rgb(230, 220, 220);
+    box-shadow: 12px 13px 30px rgba(75, 218, 228, 0.712);
+  }
+.loader{
+    background-color: #fff;
+      background-image: url('../img/loader1.gif');
+      height: 100vh;
+      width: 100%;
+      position: fixed;
+      z-index: 999999;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 60%;
+  }
+  .cont{
+    background-color: beige;
+  }
+.main{
+    display: flex;
+}
+.welcometxt{
+    margin: 5% 6%;
+}
+.disimg{
+    margin: 3% 7%;
+}
+.disimg img{
+    width: 6rem;
+}
+form{
+    margin-top: 4.2%;
+}
+label{
+    margin: 1.5rem 3.2rem;
+    transition: 0.6s;
+}
+h2{
+    text-align: center;
+    color: black;
+}
+h5,h6{
+    text-align: center;
+    margin-top: 0.5%;
+}
+#follow{
+    margin-left: -83%;    
+}
+label img{
+ width: 4rem;
+}
+input[type="checkbox"]{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 1% 1.4%;
+    cursor: pointer;
+    transition: 0.8s;
+}
+input[type="checkbox"]:hover{
+    transform: scale(1.5);
+}
+.btnbox{
+    margin-left: 44%;
+    margin-top: 1%;
+    margin-bottom: 4%;
+
+}
+input.form-control.me-2 {
+    width: 18rem;
+}
+span.time{
+    margin-left: -3%;
+}
+footer{
+    margin-top: -3.1rem;
+}
+
+
+
+ /* 1- breakpoint */
+@media (min-width:320px) and (max-width:480px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+    label {
+        margin: 1.5rem 2.3rem;}
+} 
+/* 2- breakpoint */
+@media (min-width:481px) and (max-width:768px){
+    .main{
+        display: flex;
+        flex-direction: column;
+    }
+} 

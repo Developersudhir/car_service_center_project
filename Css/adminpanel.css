@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: #83c2f0;
+    display:flex;
+    padding:1%;
+}
+
+nav img{
+    width:40px;
+    border-radius:50%;
+
+}
+nav h2{
+    margin-left:37%;
+}
+h3{
+    margin-top:5%;
+    text-align:center;
+}
+    .card{
+        margin: 2% 5%;
+        transition: 0.7s;
+        cursor: pointer;
+        box-shadow: 12px 13px 30px rgba(75, 72, 236, 0.753);
+        width: 18rem;
+    }
+    .card:hover{
+        transform: scale(1.1);
+        background-color: rgb(230, 220, 220);
+        box-shadow: 12px 13px 30px rgba(75, 218, 228, 0.712);
+    }
+    .loader{
+    background-color: #fff;
+    background-image: url('../img/loader1.gif');
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+}
+img#bills{
+    width: 5rem;
+    position:fixed;
+    right:12rem;
+    top:8rem;
+}
+table{
+    /* margin-top:5%; */
+    width: 100%;
+    text-align:center;
+}
+.oparation{
+    width: 40%;
+    border:0.5px solid black;
+    padding:8px;
+    margin-top:7%;
+    margin-left:5%;
+}
+.oparation form{
+    width: 100%;
+}
+.oparation form button{
+    margin-left:5px;
+}
+.found{
+    background-color:bisque;
+}
+
+
+@media (min-width:320px) and (max-width:480px){
+    .oparation{
+        width: 77%;
+    }
+    .card{
+        width: 14rem;
+    }
+}
+@media (min-width:500px) and (max-width:900px){
+    .oparation{
+        width: 80%;
+    }
+    .card{
+        width: 14rem;
+    }
+}
+/* Code By SUDHIR */
