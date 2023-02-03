@@ -13,8 +13,21 @@ nav img{
     border-radius:50%;
 
 }
+nav a{
+    text-align: center;
+    text-decoration: none;
+    color: aliceblue;
+    font-family: cursive;
+    margin-left: 6%;
+    margin-top: 0.6%;
+    font-size: 1.3rem;
+    transition: 0.4s;
+}
+nav a:hover{
+    border-bottom: 3px solid red;
+}
 nav h2{
-    margin-left:37%;
+    margin-left:23%;
 }
 h3{
     margin-top:5%;
@@ -46,13 +59,24 @@ h3{
 img#bills{
     width: 5rem;
     position:fixed;
-    right:12rem;
-    top:8rem;
+    right:13rem;
+    top:9rem;
+}
+#genbill{
+    position:fixed;
+    right:13rem;
+    top:14rem;
+    color: crimson;
+    text-decoration: none;
+    font-family: cursive;
 }
 table{
     /* margin-top:5%; */
     width: 100%;
     text-align:center;
+}
+tr:nth-child(2n){
+    background-color: #b3daf7;
 }
 .oparation{
     width: 40%;
@@ -60,6 +84,7 @@ table{
     padding:8px;
     margin-top:7%;
     margin-left:5%;
+    margin-bottom: 3%;
 }
 .oparation form{
     width: 100%;

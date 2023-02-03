@@ -83,11 +83,12 @@ a{
         margin-left:12%;
     }
 }
-@media (min-width:761px) and (max-width:1200px){
+@media (min-width:760px) and (max-width:1200px){
     .loginbox{
-        width: 50vw;
+        width: 30rem;
         margin-left: 22%;
-        height: 24vh;
+        height: 30vh;
+        
     }
     nav h2{
         margin-left:3%;

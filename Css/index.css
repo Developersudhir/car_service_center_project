@@ -307,7 +307,12 @@ html {
   .timing{
     margin-left: 28%;
   }
-  
+  #sec1{
+    background: rgb(216, 134, 236);
+  }
+  #contact{
+    background:bisque;
+  }
   .info {
     margin-left: 28%;
   }
@@ -318,11 +323,17 @@ html {
     width: 17rem;
     margin-top: -316%;
     margin-left: 16%;
-    height: 40vh;
+    height: 53vh;
   }
 
   section h1 {
     font-size: 1rem;
+  }
+  #sec1{
+    background: rgb(216, 134, 236);
+  }
+  #contact{
+    background:bisque;
   }
 
   .bt-box {
@@ -345,7 +356,7 @@ html {
   }
 
   #logform {
-    margin: 43% 9%;
+    margin: 20% 9%;
   }
 
   .card-body {
@@ -373,7 +384,9 @@ html {
   .card {
     width: 15rem;
   }
-
+  #sec1{
+    background: rgb(216, 134, 236);
+  }
   .loginbox {
     width: 40vw;
     margin-top: -162%;
@@ -391,11 +404,14 @@ html {
   .bt-box {
     margin-left: 30%;
   }
+  #sec1{
+    background: rgb(216, 134, 236);
+  }
 
   .loginbox {
     margin-top: -162%;
     margin-left: 30%;
-    height: 34vh;
+    height: 38vh;
   }
 }
 
@@ -409,19 +425,25 @@ html {
   .bt-box {
     margin-left: 30%;
   }
+  #sec1{
+    background: rgb(216, 134, 236);
+  }
 
   .loginbox {
     margin-top: -67%;
     margin-left: 30%;
-    height: 37vh;
+    height: 50vh;
   }
 }
 
 /* 6- Breakpoint */
-@media (min-width:1025px) {
+@media (min-width:1025px) and (max-width:1284px){
   .loginbox {
     margin-top: -38%;
-    margin-left: 30%;
+    margin-left: 34%;
     height: 37vh;
   }
+  /* #sec1{
+    background: rgb(216, 134, 236);
+  } */
 }

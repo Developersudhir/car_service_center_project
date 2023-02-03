@@ -32,7 +32,9 @@ require("connection.php");
     <div class="logo"><img src="./img/logo_img.jpg" alt=""></div>
     <h2>Welcome <?php echo strtoupper($_SESSION['Aname']);?></h2>
 </nav>
-<button id="back"><a href="adminpanel.php">Back</a></button>
+<!-- <button id="back"> -->
+    <a id="back" href="adminpanel.php">Back</a>
+<!-- </button> -->
 
 <form method="post" class="billform">
     <input class="form-control" type="email"  name="umail" placeholder="Enter Custmor Mail" required>
@@ -94,6 +96,7 @@ $dlquery="DELETE FROM `session_tb` WHERE `name`='$box'";
     }
     ?>
 <div class="loggeduser">
+    <h3 id="head">Requested Bills Are</h3>
     <table border='1' id='logusertb'>
     <tr>
         <th>Name</th>

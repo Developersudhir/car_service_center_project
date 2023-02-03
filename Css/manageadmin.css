@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    width: 100%;
+    overflow-x: hidden;
+}
+nav{
+    background-color: #83c2f0;
+    display:flex;
+    padding:1%;
+}
+nav img{
+    width:40px;
+    border-radius:50%;
+}
+nav a{
+    margin-left: 8%;
+}
+h1{
+    text-align: center;
+    margin: 1%;
+    font-family: cursive;
+    color: coral;
+}
+.display{
+    width: 30%;
+    margin: 3% auto;
+
+}
+.display img{
+    width: 100%;
+    border-radius: 20px;
+    border: 2px solid rgb(96, 173, 245);
+    padding: 7px;
+}
+.btn-box{
+    margin: 1% 39%;
+    width: 30%;
+}
+.btn{
+    margin-left: 1%;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.createadmin{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 217, 217);
+    width: 30vw;
+    padding: 10px;
+    margin-top: -20%;
+    margin-left: 35%;
+    box-shadow: 12px 13px 30px rgba(44, 77, 221, 0.712);
+    border-radius: 12px;
+    padding-top: 1.5%;
+    height: 55vh;
+    transition: 0.7s center;
+    position: absolute;
+    visibility: hidden;
+}
+#logimg{
+    width: 65px;
+    border-radius: 50%;
+    margin: -12% 40%;
+}
+.adminform{
+    margin: 17% 9%;
+}
+#cros{
+    position: absolute;
+    right: 2px;
+    font-size: 2rem;
+    top: -3px;
+    cursor: pointer;
+}
+#cros1{
+    position: absolute;
+    right: 2px;
+    font-size: 2rem;
+    top: -3px;
+    cursor: pointer;
+}
+.visible{
+    visibility: visible;
+}
+.updateadmin{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(243, 217, 217);
+    width: 30vw;
+    padding: 10px;
+    margin-top: -20%;
+    margin-left: 35%;
+    box-shadow: 12px 13px 30px rgba(44, 77, 221, 0.712);
+    border-radius: 12px;
+    padding-top: 1.5%;
+    height: 65vh;
+    transition: 0.7s center;
+    position: absolute;
+    visibility: hidden; 
+}
+.admintable{
+    margin-top: 2%;
+}
+.loader {
+    background-color: #fff;
+    background-image: url('../img/loader1.gif');
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 999999;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+  }
+
+/*  1-BreakPoint */
+@media (max-width:600px){
+    .btn-box{
+        display: flex;
+        flex-direction: column;
+        width: 23vw;
+    }
+    .btn-box .btn{
+        margin-top: 6%;
+    }
+    .createadmin{
+        width: 56vw;
+        margin-left: 19%;
+        height: 65vh;
+    }
+    .updateadmin{
+        width: 56vw;
+        margin-left: 19%;
+        height: 65vh;
+    }
+}
+/*  2-BreakPoint */
+@media(min-width:601px) and (max-width:1024px){
+    .createadmin{
+        width:40%;
+        margin-left: 27%;
+    }
+    .updateadmin{
+        width: 40%;
+        margin-left: 27%;
+    }
+}
+/*  3-BreakPoint */
+@media(min-width:1025px) and (max-width:1300px){
+    .createadmin{
+        width:30%;
+        margin-left: 30%;
+    }
+    .updateadmin{
+        width: 30%;
+        margin-left: 30%;
+    }
+}
+/*  4-BreakPoint */
+@media(min-width:1301px){
+    .createadmin{
+        width:30%;
+        margin-left: 27%;
+    }
+    .updateadmin{
+        width: 40%;
+        margin-left: 27%;
+    }
+}

@@ -22,6 +22,12 @@ html,body{
 nav h2{
     margin-left:37%;
 }
+#head{
+    color: lightcoral;
+    text-align: center;
+    text-shadow: 3px 4px 4px goldenrod;
+    margin-bottom: 2%;
+}
 .billform{
     margin:5% 10%;
     display:inline-flex;
@@ -52,12 +58,12 @@ input[type="text"]{
         height:1.1rem;
     }
     .bill{
-        height: 54vh;
-        margin: 10% 20%;
+        height: 60vh;
+        margin: 11% 22%;
         background-color: aliceblue;
         text-align: center;
-        border-radius:15px;
-        box-shadow:4px 8px 12px black;
+        border-radius: 15px;
+        box-shadow: 3px 3px 18px rgb(166, 245, 218);
 
     }
     .btn{
@@ -71,16 +77,11 @@ input[type="text"]{
         border-radius: 10px;
         background: azure;
         width: 4.2rem;
-    }
-    a{
         color: red;
         text-decoration: none;
         font-weight:500;
+        text-align: center;
     }
-    /* #billno{
-        text-align:end;
-        margin-right:1%;
-    } */
     #logusertb{
         width:60%;
         margin:auto;
@@ -90,7 +91,7 @@ input[type="text"]{
     }
     
     body{
-        background-color:bisque;
+        background-color:rgb(160, 240, 213);
     }
 @media (min-width:320px) and (max-width:480px){
     nav h2{
@@ -120,6 +121,11 @@ input[type="text"]{
         margin-left: 15%;
         }
 }
+@media (min-width:600px) and (max-width:900px){
+    .bill{
+        height: 50vh;
+    }
+}
 @media (min-width:769px) and (max-width:1036px){
     #billtb {
         margin: 0;
@@ -127,5 +133,13 @@ input[type="text"]{
     .billform{
         margin-left: 15%;
     }
+    /* .bill{
+        height: 0vh;
+    } */
+@media (min-width:1024px){
+ .bill{
+    height: 79vh;
+ }
+}
 
 }

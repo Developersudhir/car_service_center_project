@@ -27,7 +27,8 @@
 <div class="loader"></div>
 <nav>
     <div class="logo"><img src="./img/logo_img.jpg" alt=""></div>
-    <h2>Welcome <?php echo $_SESSION['Aname'];?></h2>
+    <a href="./manageadmin.php">Manage Admin</a>
+    <h2>Welcome <?php echo strtoupper($_SESSION['Aname']);?></h2>
 </nav>
 <div class="main">
 <div class="card">
@@ -45,7 +46,7 @@
     }
     ?>
 </div>
-<a href="bill.php"><img src="./img/pay_img.gif" alt="Bills" id="bills"></a>
+<a href="bill.php" id="genbill"><img src="./img/pay_img.gif" alt="Bills" id="bills">Generate Bill</a>
 <div class="oparation">
 <form  method="post" class="d-flex">
     <input class="form-control me-2" name="box" type="number" placeholder="Search Or Delete By Bill No.">
