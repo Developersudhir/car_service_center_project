@@ -41,6 +41,12 @@
       margin-left:5%;
 
     }
+    #emailHelp1{
+      color:red;
+      /* font-size:1rem; */
+      font-weight:600;
+      display:none;
+    }
       </style>
 </head>
 <body>
@@ -51,25 +57,30 @@
         <form id="signform" method="post" >
         <div class="mb-3">
           <label for="UserName" class="form-label">Your Name</label>
-          <input type="text" name="Uname" class="form-control" placeholder="John Doe" required>
+          <input type="text" name="Uname" class="form-control" placeholder="John Doe" required id="UserName">
         </div>
         <div class="mb-3">
           <label for="Userphone"  class="form-label">Your Phone No.</label>
-          <input type="text" name="Uphone" class="form-control" placeholder="12XXXXXXXX"required>
+          <input type="text" name="Uphone" class="form-control" placeholder="12XXXXXXXX"required id="Userphone">
         </div>
         <div class="mb-3">
           <label for="UserEmail"  class="form-label">Your Email Address</label>
-          <input type="email" name="Uemail" class="form-control" placeholder="name@gmail.com" required>
+          <input type="email" name="Uemail" class="form-control" placeholder="name@gmail.com" required id="UserEmail">
         </div>
         <div class="mb-3">
           <label for="Password" class="form-label">Password</label>
-          <input type="password" name="Upass" class="form-control"  required>
+          <input type="password" name="Upass" class="form-control"  required id="Password">
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Confirm Password</label>
+          <input type="password" name="UCpass" class="form-control"  required id="confirmPassword" onkeyup="verifyPassword()">
+          <div id="emailHelp1" class="form-text custalert">Confirm Password Not Match To Password</div>
         </div>
         <h5>Car Information</h5>
         <div class="mb-3">
             <label for="comapnyname" class="form-label">Car Company Name</label>
-            <select name="compname" id="">
+            <select name="compname" id="comapnyname">
             <option value="Audi">Audi</option>
             <option value="BMW">BMW</option>
             <option value="Chevrolet">Chevrolet</option>
@@ -81,21 +92,21 @@
             <option value="Toyota">Toyota</option>
             <option value="Volkswagen">Volkswagen</option>
             <option value="Renault">Renault</option>
-            <option value=">Kia">Kia</option>
+            <option value="Kia">Kia</option>
             <option value="Ford India">Ford India</option>
             <option value="Force Motors">Force Motors</option>
           </select>
           </div>
           <div class="mb-3">
             <label for="modelname" class="form-label">Car Model Name</label>
-            <input type="text" name="modelname" class="form-control"placeholder="BMW X1,TATA Safari"  required>
+            <input type="text" name="modelname" class="form-control"placeholder="BMW X1,TATA Safari"  required id="modelname">
           </div>
           <div class="mb-3">
             <label for="rtono" class="form-label">Car R.T.O. No.</label>
-            <input type="text" name="rtono" class="form-control" placeholder="MH-XX-FW-XXXX"  required>
+            <input type="text" name="rtono" class="form-control" placeholder="MH-XX-FW-XXXX"  required id="rtono">
           </div>
         <div class="mb-3 form-check">
-          <input type="checkbox" class="form-check-input"  checked>
+          <input type="checkbox" class="form-check-input"  checked id="exampleCheck1">
           <label class="form-check-label" for="exampleCheck1">Check me out</label>
         </div>
         <button type="submit" name="Signup" class="btn btn-primary">Submit</button>
@@ -103,11 +114,12 @@
       <?php 
       // taking input from user and saving in database
       $name=$phone=$email=$pass=$compname=$modelname=$rto=" ";
+      
       if(isset($_POST['Signup'])){
         $name=test_input($_POST['Uname']);
         $phone=test_input($_POST['Uphone']);
         $email=test_input($_POST['Uemail']);
-        $pass=test_input($_POST['Upass']);
+        $pass=test_input($_POST['UCpass']);
         $compname=$_POST['compname'];
         $modelname=test_input($_POST['modelname']);
         $rto=test_input($_POST['rtono']);
@@ -131,6 +143,7 @@
                 echo "Message : ".$e->getMessage();
               }
         }
+        
       }
       function test_input($data) {
         $data = stripslashes($data);
@@ -138,7 +151,10 @@
         $data = htmlspecialchars($data);
         return $data;
       }
+      
       ?>
-
+<script src="./Js/signin.js">
+  
+</script>
 </body>
 </html>

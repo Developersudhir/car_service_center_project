@@ -116,6 +116,16 @@ $dlquery="DELETE FROM `session_tb` WHERE `name`='$box'";
 </div>
 <div class="bill">
     <!-- Generating Bill -->
+    <?php
+    if(isset($Uname)){
+        // echo "Uname Set";
+        echo "<script>let bill=document.querySelector('.bill');
+        bill.style.display='block';</script>";
+    }
+    else{
+        echo "Uname IS Not Set";
+    }
+     ?>
         <h1 class="ink">Mechanic On Duty!</h1>
         <h4 class="wavy">Your Bill</h4>
         <table border="1" id="billtb">
@@ -123,7 +133,7 @@ $dlquery="DELETE FROM `session_tb` WHERE `name`='$box'";
                 <th colspan="2" id="billno">Bill No.:- <?php if(isset($billno)){echo $billno;}else{echo "Bill";}?></th>
             </tr>
             <tr>
-                <td colspan="2"><h4><?php if(isset($Uname)){echo $Uname;}else{ echo "User Name";} ?></h4></td>
+                <td colspan="2"><h4><?php if(isset($Uname)){echo strtoupper($Uname);}else{ echo "User Name";} ?></h4></td>
                 <td><h6>Date:- <?php if(isset($date)){echo $date;}else{echo "date";}?></h6></td>
             </tr>
             <tr>
@@ -165,32 +175,6 @@ $dlquery="DELETE FROM `session_tb` WHERE `name`='$box'";
         <button class="btn btn-primary" onclick="window.print()">Print</button>
 </div>
 <!-- footer -->
-    <footer id="about">
-      <h3 class="ink">Mechanic On Duty !</h3>
-      <img src="./img/mechanic_img.png" alt="Mechanic Logo" id="mechanic">
-      <div class="social">
-        <a href="#"><img src="./img/facebook.png" alt="instagram"></a>
-        <a href="#"><img src="./img/instagram.png" alt="facebook"></a>
-        <h5>Follow Us On !</h5>
-      </div>
-      <div class="timing">
-      <h5 class="ink">Monday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Tuesday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Wednesday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Thursday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Friday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Saturday &rightarrow; 10 Am to 8 Pm.</h5>
-      <h5 class="ink">Garage Closes At Sunday.</h5>
-      </div>
-      <div class="info">
-        <p><strong>About Us?</strong> We Have Trained And Professional Worker's For Your Car</p>
-        <p> Car Delivery <strong>Is ON TIME !</strong></p>
-        <p>Great Feedback From <strong>Satisfied Custmer's</strong></p>
-        <p>Contact Us On <strong>-1234567890</strong></p>
-        <p>Our Mail id <strong>mechaniconduty333@gmail.com</strong></p>
-      </div>
-      <h5 id="copyrg">&copy; Are Reserved 2023 Mechanic On Duty</h5
-    </footer>
 <script>
     var loader=document.querySelector(".loader");
     window.addEventListener("load",()=>{
